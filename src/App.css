@@ -252,18 +252,6 @@
   }
 
   .layout1, .layout2, .layout3 {
-    filter: blur(5em);
-  }
-
-  .layout1 {
-    width: 25%;
-    height: 40%;
-    top: 1em;
-  }
-
-  .layout2 {
-    width: 25%;
-    height: 30%;
-    top: 3em;
+    display: none;
   }
 }
