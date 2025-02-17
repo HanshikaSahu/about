@@ -8,6 +8,50 @@
   align-items: center;
   font-weight: 700;
   font-family: 'Chakra Petch', sans-serif;
+  z-index: 1;
+  position: relative;
+}
+
+.layout1{
+  position: absolute;
+  left: 0;
+  top: 1.5em;
+  bottom: 0;
+  height: 30%;
+  width: 15%;
+  overflow: hidden;
+  z-index: -1;
+  background:  radial-gradient(circle at left, #1FD427 10%, black 90%);
+  opacity: 55%;
+  filter: blur(3em);
+}
+
+.layout2{
+  position: absolute;
+  right: 0;
+  top: 5em;
+  bottom: 0;
+  height: 20%;
+  width: 15%;
+  overflow: hidden;
+  z-index: -1;
+  background:  radial-gradient(circle at right, #1FD427 , black 90%);
+  opacity: 55%;
+  filter: blur(5em);
+}
+
+.layout3{
+  right: 85%;
+  position: absolute;
+  top: 60%;
+  height: 27%;
+  width: 25%;
+  transform: rotate(-25deg);
+  overflow: hidden;
+  z-index: -1;
+  background:  radial-gradient(circle at left, #1FD427 3%, black 90%);
+  opacity: 40%;
+  filter: blur(2em);
 }
 
 .header {
@@ -31,7 +75,6 @@
 }
 
 .main{
- 
   width: 90%;
 }
 
@@ -129,7 +172,24 @@
   .info-card {
     max-width: 47%;  
   }
+
+  .layout1 {
+    width: 15%;
+    height: 30%;
+  }
+
+  .layout2 {
+    width: 15%;
+    height: 20%;
+  }
+
+  .layout3 {
+    width: 25%;
+    height: 27%;
+  }
 }
+
+
 
 @media (min-width: 769px) and (max-width: 1199px) {
   .card-section {
@@ -144,6 +204,25 @@
   .info-card {
     flex: 1 1 45%;  
     max-width: 100%;
+  }
+
+  .layout1, .layout2, .layout3 {
+    filter: blur(3em);
+  }
+  
+  .layout1 {
+    width: 20%;
+    height: 35%;
+  }
+
+  .layout2 {
+    width: 20%;
+    height: 25%;
+  }
+
+  .layout3 {
+    width: 30%;
+    height: 30%;
   }
 }
 
@@ -170,5 +249,21 @@
   .info-card {
     width: 100%;  
     max-width: 100%;  
+  }
+
+  .layout1, .layout2, .layout3 {
+    filter: blur(5em);
+  }
+
+  .layout1 {
+    width: 25%;
+    height: 40%;
+    top: 1em;
+  }
+
+  .layout2 {
+    width: 25%;
+    height: 30%;
+    top: 3em;
   }
 }

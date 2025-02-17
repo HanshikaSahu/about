@@ -19,6 +19,9 @@ function App() {
 
   return (
     <div className="about-page">
+      <div className="layout1"></div>
+      <div className="layout2"></div>
+      <div className="layout3"></div>
       <header className="header">
         <h1 className="header-title"><span style={{color: "#04b40c"}}>ABOUT</span> US</h1>
       </header>
