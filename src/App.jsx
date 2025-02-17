@@ -20,33 +20,35 @@ function App() {
   return (
     <div className="about-page">
       <header className="header">
-        <h1 className="header-title"><span style={{color: "green"}}>ABOUT</span> US</h1>
+        <h1 className="header-title"><span style={{color: "#04b40c"}}>ABOUT</span> US</h1>
       </header>
 
-      <section className="founder-section">
-        <img
-          src="founder.svg"
-          alt="Founder"
-          className="founder-image"
-        />
-        <h2 className="founder-title">Founder</h2>
-        <p className="founder-description">
+      <div className="main">
+        <section className="founder-section">
+          <img
+            src="founder.svg"
+            alt="Founder"
+            className="founder-image"
+          />
+          <h2 className="founder-title">Founder</h2>
+          <p className="founder-description">
         Dr. Achyuta Samanta is a visionary educationist, philanthropist, and social entrepreneur from India, best known for founding KIIT (Kalinga Institute of Industrial Technology) and KISS (Kalinga Institute of Social Sciences) in Bhubaneswar, Odisha. Born on January 20, 1965, in a small village in Odisha, Dr. Samanta faced numerous hardships during his early life, which fueled his determination to make a significant impact in the field of education and social development.
-        </p>
-      </section>
+          </p>
+        </section>
 
-      <div className="card-section">
-        {cards.map((card, index) => (
-          <div key={index} className="info-card">
-             <img 
-              src={card.image} 
-              alt={card.title} 
-              className="card-image"
-            />
-            <h3 className="card-title">{card.title}</h3>
-            <p className="card-content">{card.content}</p>
-          </div>
-        ))}
+        <div className="card-section">
+          {cards.map((card, index) => (
+            <div key={index} className="info-card">
+              <img 
+                src={card.image} 
+                alt={card.title} 
+                className="card-image"
+              />
+              <h3 className="card-title">{card.title}</h3>
+              <p className="card-content">{card.content}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
